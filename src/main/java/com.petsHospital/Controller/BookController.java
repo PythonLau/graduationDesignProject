@@ -33,6 +33,6 @@ public class BookController{
         InputStream is = this.getClass().getResourceAsStream("/book.xml");
         Book book = (Book)unmar.unmarshal(is);
         logger.info(book);
-        return book;
+        return book;    //来一次github测试!
     }
 }

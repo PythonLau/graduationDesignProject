@@ -1,10 +1,13 @@
 package com.petsHospital.domain;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
 /**
  * Created by Administrator on 2017/2/27 0027.
  */
+@XmlRootElement
 public class Book implements Serializable{
     private Integer id;
     private String name;
@@ -22,6 +25,7 @@ public class Book implements Serializable{
         return id;
     }
 
+    @XmlElement
     public void setId(Integer id) {
         this.id = id;
     }
@@ -30,6 +34,7 @@ public class Book implements Serializable{
         return name;
     }
 
+    @XmlElement
     public void setName(String name) {
         this.name = name;
     }
@@ -38,7 +43,12 @@ public class Book implements Serializable{
         return author;
     }
 
+    @XmlElement
     public void setAuthor(String author) {
         this.author = author;
+    }
+    @Override
+    public String toString(){
+        return "Book [id=" + id + ", name=" + name + ", author=" + author + "]";
     }
 }

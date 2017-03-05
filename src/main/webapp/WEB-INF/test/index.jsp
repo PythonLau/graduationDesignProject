@@ -12,22 +12,6 @@
     <title>测试接收JSON格式的数据</title>
     <script src="${pageContext.request.contextPath}/test/js/common/jquery-2.2.4.min.js" rel="script"></script>
     <script src="${pageContext.request.contextPath}/test/js/common/json2.js" rel="script"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            sendxml();
-        });
-        function sendxml() {
-            var xmlData = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>" +
-                "<book><id>1</id><name>疯狂java讲义</name><author>李刚</author></book>";
-            $.ajax({
-                url : "${pageContext.request.contextPath}/sendxml",
-                type : "POST",
-                contentType : "application/xml",
-                data : xmlData,
-                async : true,
-            });
-        }
-    </script>
 </head>
 <body>
 </body>

@@ -30,9 +30,9 @@ public class BookController{
     public @ResponseBody Book readXml() throws Exception{
         JAXBContext context = JAXBContext.newInstance(Book.class);
         Unmarshaller unmar = context.createUnmarshaller();
-        InputStream is = this.getClass().getResourceAsStream("/book.xml");
+        InputStream is = this.getClass().getResourceAsStream("D:\\Java\\myJavaCode\\graduationDesignProject\\src\\test\\java\\Book.xml");
         Book book = (Book)unmar.unmarshal(is);
         logger.info(book);
-        return book;    //来一次github测试!
+        return book;
     }
 }

@@ -1,22 +1,16 @@
 package com.petsHospital.domain;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/3/6 0006.
+ * Created by Administrator on 2017/3/7 0007.
  */
-public class Clazz {
+public class Clazz implements Serializable{
     private Integer id;
     private String code;
+    private String name;
     private List<Student> students;
-
-    public List<Student> getStudents() {
-        return students;
-    }
-
-    public void setStudents(List<Student> students) {
-        this.students = students;
-    }
 
     public Integer getId() {
         return id;
@@ -32,5 +26,21 @@ public class Clazz {
 
     public void setCode(String code) {
         this.code = code;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<Student> getStudents() {
+        return students;
+    }
+
+    public void setStudents(List<Student> students) {
+        this.students = students;
     }
 }

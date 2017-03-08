@@ -1,9 +1,11 @@
 package com.petsHospital.domain;
 
+import java.io.Serializable;
+
 /**
- * Created by Administrator on 2017/3/6 0006.
+ * Created by Administrator on 2017/3/7 0007.
  */
-public class Student {
+public class Student implements Serializable{
     private Integer id;
     private String name;
     private String sex;

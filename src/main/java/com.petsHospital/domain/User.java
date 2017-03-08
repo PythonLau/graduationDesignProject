@@ -1,22 +1,19 @@
 package com.petsHospital.domain;
 
+import java.io.Serializable;
+import java.util.List;
+
 /**
- * Created by Administrator on 2017/3/4 0004.
+ * Created by Administrator on 2017/3/7 0007.
  */
-public class User {
+public class User implements Serializable{
     private Integer id;
-    private String name;
-    private String sex;
-    private Integer age;
-    public User(){
-        super();
-    }
-    public User(String name,String sex,Integer age){
-        super();
-        this.name = name;
-        this.sex = sex;
-        this.age = age;
-    }
+    private String username;
+    private String loginname;
+    private String password;
+    private String phone;
+    private String address;
+    private List<Order> orders;
 
     public Integer getId() {
         return id;
@@ -26,27 +23,51 @@ public class User {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getLoginname() {
+        return loginname;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setLoginname(String loginname) {
+        this.loginname = loginname;
     }
 
-    public String getSex() {
-        return sex;
+    public String getPassword() {
+        return password;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public Integer getAge() {
-        return age;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public List<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(List<Order> orders) {
+        this.orders = orders;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 }

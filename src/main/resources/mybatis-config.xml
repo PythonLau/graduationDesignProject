@@ -3,6 +3,11 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+    <settings>
+        <!--要使延时加载生效必须配置下面两个属性-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"></transactionManager>
@@ -15,6 +20,10 @@
         </environment>
     </environments>
     <mappers>
+        <mapper resource="mapper/ClazzMapper.xml"/>
+        <mapper resource="mapper/StudentMapper.xml"/>
         <mapper resource="mapper/UserMapper.xml"/>
+        <mapper resource="mapper/OrderMapper.xml"/>
+        <mapper resource="mapper/ArticleMapper.xml"/>
     </mappers>
 </configuration>

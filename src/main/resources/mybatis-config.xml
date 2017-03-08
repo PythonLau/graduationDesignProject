@@ -25,5 +25,6 @@
         <mapper resource="mapper/UserMapper.xml"/>
         <mapper resource="mapper/OrderMapper.xml"/>
         <mapper resource="mapper/ArticleMapper.xml"/>
+        <mapper resource="mapper/EmployeeMapper.xml"/>
     </mappers>
 </configuration>

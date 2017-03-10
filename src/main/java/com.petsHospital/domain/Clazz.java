@@ -4,9 +4,9 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/3/7 0007.
+ * Created by Administrator on 2017/3/9 0009.
  */
-public class Clazz implements Serializable{
+public class Clazz implements Serializable {
     private Integer id;
     private String code;
     private String name;

@@ -5,12 +5,12 @@ import java.io.Serializable;
 /**
  * Created by Administrator on 2017/3/9 0009.
  */
-public class Student implements Serializable{
+public class Person implements Serializable{
     private Integer id;
     private String name;
     private String sex;
     private Integer age;
-    private Clazz clazz;
+    private Card card;
 
     public Integer getId() {
         return id;
@@ -44,11 +44,11 @@ public class Student implements Serializable{
         this.age = age;
     }
 
-    public Clazz getClazz() {
-        return clazz;
+    public Card getCard() {
+        return card;
     }
 
-    public void setClazz(Clazz clazz) {
-        this.clazz = clazz;
+    public void setCard(Card card) {
+        this.card = card;
     }
 }

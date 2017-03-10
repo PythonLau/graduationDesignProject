@@ -1,10 +1,11 @@
 package com.petsHospital.domain;
 
+
 import java.io.Serializable;
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/3/7 0007.
+ * Created by Administrator on 2017/3/10 0010.
  */
 public class User implements Serializable{
     private Integer id;
@@ -21,6 +22,14 @@ public class User implements Serializable{
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getLoginname() {
@@ -61,13 +70,5 @@ public class User implements Serializable{
 
     public void setOrders(List<Order> orders) {
         this.orders = orders;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
     }
 }

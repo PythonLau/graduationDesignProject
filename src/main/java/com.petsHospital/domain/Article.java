@@ -4,14 +4,14 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/3/7 0007.
+ * Created by Administrator on 2017/3/10 0010.
  */
-public class Article implements Serializable {
+public class Article implements Serializable{
     private Integer id;
     private String name;
     private Double price;
     private String remark;
-    private List<Order> order;
+    private List<Order> orders;
 
     public Integer getId() {
         return id;
@@ -45,11 +45,11 @@ public class Article implements Serializable {
         this.remark = remark;
     }
 
-    public List<Order> getOrder() {
-        return order;
+    public List<Order> getOrders() {
+        return orders;
     }
 
-    public void setOrder(List<Order> order) {
-        this.order = order;
+    public void setOrders(List<Order> orders) {
+        this.orders = orders;
     }
 }

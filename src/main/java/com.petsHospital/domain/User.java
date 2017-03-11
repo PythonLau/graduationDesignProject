@@ -2,19 +2,17 @@ package com.petsHospital.domain;
 
 
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * Created by Administrator on 2017/3/10 0010.
  */
 public class User implements Serializable{
     private Integer id;
-    private String username;
     private String loginname;
     private String password;
+    private String username;
     private String phone;
     private String address;
-    private List<Order> orders;
 
     public Integer getId() {
         return id;
@@ -22,14 +20,6 @@ public class User implements Serializable{
 
     public void setId(Integer id) {
         this.id = id;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
     }
 
     public String getLoginname() {
@@ -48,6 +38,14 @@ public class User implements Serializable{
         this.password = password;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     public String getPhone() {
         return phone;
     }
@@ -62,13 +60,5 @@ public class User implements Serializable{
 
     public void setAddress(String address) {
         this.address = address;
-    }
-
-    public List<Order> getOrders() {
-        return orders;
-    }
-
-    public void setOrders(List<Order> orders) {
-        this.orders = orders;
     }
 }

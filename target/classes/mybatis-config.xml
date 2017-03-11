@@ -22,13 +22,7 @@
         </environment>
     </environments>
     <mappers>
-        <mapper class="com.petsHospital.mapper.PersonMapper"/>
-        <mapper class="com.petsHospital.mapper.CardMapper"/>
-        <mapper class="com.petsHospital.mapper.ClazzMapper"/>
-        <mapper class="com.petsHospital.mapper.StudentMapper"/>
-        <mapper class="com.petsHospital.mapper.OrderMapper"/>
         <mapper class="com.petsHospital.mapper.UserMapper"/>
-        <mapper class="com.petsHospital.mapper.ArticleMapper"/>
-        <mapper class="com.petsHospital.mapper.EmployeeMapper"/>
+        <mapper class="com.petsHospital.mapper.BookMapper"/>
     </mappers>
 </configuration>
